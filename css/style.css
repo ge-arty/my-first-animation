@@ -1,0 +1,39 @@
+body {
+  width: 1000px;
+  border: 3px solid black;
+  height: 800px;
+}
+.boomerang {
+  background: url("../images/pngtree-boomerang-australian-pattern-brown-beautiful-png-image_3976827-removebg-preview.png")
+    no-repeat;
+  width: 200px;
+  height: 200px;
+  animation: example 4s infinite;
+}
+
+@keyframes example {
+  0% {
+    transform: rotateZ(0deg);
+    margin-left: 0;
+  }
+  25% {
+    transform: rotateZ(360deg);
+    margin-left: 800px;
+    margin-top: 300px;
+  }
+  50% {
+    transform: rotateZ(0deg);
+    margin-left: 0px;
+    margin-top: 600px;
+  }
+  75% {
+    transform: rotateZ(360deg);
+    margin-left: 800px;
+    margin-top: 300px;
+  }
+  100% {
+    transform: rotateZ(0deg);
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
